@@ -131,7 +131,8 @@ int main()
 	    printf("Escolha a opção do menu desejada:\n\n");
 	    printf("\t1 - Registrar usuário\n");
 	    printf("\t2 - Consultar usuário\n");
-	    printf("\t3 - Deletar usuário\n\n\n");
+	    printf("\t3 - Deletar usuário\n");
+	    printf("\t4 - Sair\n\n");
 	    printf("Como posso te ajudar? "); //Fim do menu
 	
 	    scanf("%d", &opcao); //Armazenando a escolha do usuario
@@ -151,6 +152,11 @@ int main()
 	    case 3:
 	        deletar();
     	    break;
+    	    
+    	case 4:
+    		printf("Volte sempre\n");
+    		return 0;
+    		break;
     		
     	default:
             printf("Está opção é invalida, tente novamente\n");
